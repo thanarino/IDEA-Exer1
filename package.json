@@ -1,0 +1,18 @@
+{
+  "name": "IDEA-Exer1",
+  "version": "0.0.0",
+  "description": "ACSS Project: IDEA",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/thanarino/IDEA-Exer1.git"
+  },
+  "author": "",
+  "license": "BSD-2-Clause",
+  "bugs": {
+    "url": "https://github.com/thanarino/IDEA-Exer1/issues"
+  }
+}

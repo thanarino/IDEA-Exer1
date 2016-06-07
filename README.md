@@ -6,4 +6,4 @@ This Exercise contains 3 applications:
 - Basic calculator app using jQuery
 - Shopping web app with a shopping cart functionality.
 
-####### BY JONATHAN A. ARINO
+###### BY JONATHAN A. ARINO
