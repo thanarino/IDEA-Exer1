@@ -1,0 +1,10 @@
+button {
+	margin: .5vw;
+	min-height: 5vw;
+	width: 5vw;
+}
+
+.row {
+	padding: 0;
+	margin: 0;
+}

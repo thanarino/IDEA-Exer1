@@ -19,7 +19,7 @@ $('document').ready(function(){
     jQuery('<div/>', {
         class: 'card-panel',
         style: 'padding-top: 0'
-    }).appendTo('#panelpanel');
+    }).appendTo('#panelpanel'); 
 
     //ANSWER BOX
     jQuery('<div/>', {
@@ -68,7 +68,7 @@ $('document').ready(function(){
 
     jQuery('<button/>', {
         id: 'button_div',
-        class: 'waves-effect waves-light btn-large',
+        class: 'waves-effect waves-light btn-large teal darken-2',
         style: 'margin: .5vw; height: 5vw; width: 5vw;'
     }).appendTo('#row_one');
     $('#button_div').append(document.createTextNode('/'));
@@ -103,7 +103,7 @@ $('document').ready(function(){
 
     jQuery('<button/>', {
         id: 'button_mult',
-        class: 'waves-effect waves-light btn-large',
+        class: 'waves-effect waves-light btn-large teal darken-2',
         style: 'margin: .5vw; height: 5vw; width: 5vw;'
     }).appendTo('#row_two');
     $('#button_mult').append(document.createTextNode('x'));
@@ -138,7 +138,7 @@ $('document').ready(function(){
 
     jQuery('<button/>', {
         id: 'button_sub',
-        class: 'waves-effect waves-light btn-large',
+        class: 'waves-effect waves-light btn-large teal darken-2',
         style: 'margin: .5vw; height: 5vw; width: 5vw;'
     }).appendTo('#row_three');
     $('#button_sub').append(document.createTextNode('-'));
@@ -152,14 +152,14 @@ $('document').ready(function(){
 
     jQuery('<button/>', {
         id: 'button_open',
-        class: 'waves-effect waves-light btn-large',
+        class: 'waves-effect waves-light btn-large teal darken-1',
         style: 'margin: .5vw; height: 5vw; width: 5vw;'
     }).appendTo('#row_four');
     $('#button_open').append(document.createTextNode('('));
 
     jQuery('<button/>', {
         id: 'button_close',
-        class: 'waves-effect waves-light btn-large',
+        class: 'waves-effect waves-light btn-large teal darken-1',
         style: 'margin: .5vw; height: 5vw; width: 5vw;'
     }).appendTo('#row_four');
     $('#button_close').append(document.createTextNode(')'));
@@ -173,7 +173,7 @@ $('document').ready(function(){
 
     jQuery('<button/>', {
         id: 'button_plus',
-        class: 'waves-effect waves-light btn-large',
+        class: 'waves-effect waves-light btn-large teal darken-2',
         style: 'margin: .5vw; height: 5vw; width: 5vw;'
     }).appendTo('#row_four');
     $('#button_plus').append(document.createTextNode('+'));
@@ -187,14 +187,14 @@ $('document').ready(function(){
 
     jQuery('<button/>', {
         id: 'button_erase',
-        class: 'waves-effect waves-light btn-large',
+        class: 'waves-effect waves-light btn-large teal darken-2',
         style: 'margin: .5vw; height: 5vw; width: 5vw;'
     }).appendTo('#row_five');
     $('#button_erase').append(document.createTextNode('C'));
 
     jQuery('<button/>', {
         id: 'button_equals',
-        class: 'waves-effect waves-light btn-large',
+        class: 'waves-effect waves-light btn-large teal darken-4',
         style: 'margin: .5vw; height: 5vw; width: 11vw;'
     }).appendTo('#row_five');
     $('#button_equals').append(document.createTextNode('='));
