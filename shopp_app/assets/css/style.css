@@ -1,0 +1,47 @@
+@font-family {
+	font-family: "RobotoThin";
+	src: url(../fonts/roboto/Roboto-Thin.tff);
+}
+
+@font-family {
+	font-family: "Roboto";
+	src: url(../fonts/roboto/Roboto-Regular.woff);
+}
+
+body {
+	margin: 0px;
+	padding: 0px;
+}
+
+a {
+	margin: 0px;
+	padding: 0px;
+}
+
+nav {
+	margin:0px;
+	padding: 0px;
+}
+
+a:hover, a:visited, a:link, a:active {
+	font-family: Roboto;
+	font-size: 3vw;
+	color: white;
+	text-decoration: none;
+}
+
+ #menu-choices {
+	font-size: 1.5vw;
+}
+
+.card-panel {
+	padding-bottom: 2vw;
+	padding-top: 2vw;
+	padding-left: 0px;
+	padding-right: 0px;
+	margin: 0px;
+}
+
+.material-icons {
+	font-size: 3vw;
+}
