@@ -8,9 +8,17 @@
 	src: url(../fonts/roboto/Roboto-Regular.woff);
 }
 
-body {
+head, body {
 	margin: 0px;
-	padding: 0px;
+	padding-left: 300px;
+	padding-right: 50px;
+}
+
+@media only screen and (max-width : 992px) {
+    head, body, .nav-wrapper {
+    padding-left: 0;
+    padding-right: 0;
+    }
 }
 
 a {
@@ -21,6 +29,7 @@ a {
 nav {
 	margin:0px;
 	padding: 0px;
+	height: auto;
 }
 
 a:hover, a:visited, a:link, a:active {
@@ -35,8 +44,8 @@ a:hover, a:visited, a:link, a:active {
 }
 
 .card-panel {
-	padding-bottom: 2vw;
-	padding-top: 2vw;
+	padding-top: 3vw;
+	padding-bottom: 3vw;
 	padding-left: 0px;
 	padding-right: 0px;
 	margin: 0px;
@@ -44,4 +53,8 @@ a:hover, a:visited, a:link, a:active {
 
 .material-icons {
 	font-size: 3vw;
+}
+
+.card-title {
+	font-family: 'Open Sans', sans-serif;
 }
