@@ -19,6 +19,18 @@ head, body {
     padding-left: 0;
     padding-right: 0;
     }
+
+    .title-card {
+    	margin-top: 10px;
+    	margin-left: 10px;
+    	margin-right: 10px;
+    }
+}
+
+@media only screen and (min-width : 993px) {
+    .card {
+    	margin-top: 50px;
+    }
 }
 
 a {
