@@ -1,54 +1,54 @@
 <div class="col s10 m4" ng-controller="allShopController">
-          <div class="card grey lighten-4 title-card">
-            <div class="card-content black-text">
-                <span class="card-title" style="font-size: 3em">featured</span>
-                <div class="row">
-                    <div class="col s12 m4 l4" style="padding-left: 1em; padding-right: 1em; padding-top: 0px;">
-                        <div class="card med center-align hoverable">
-                            <div class="card-image">
-                                <img src="../assets/img/item/tswift.jpg">
-                                <span class="card-content black-text" style="font-size: 2em;font-family: 'Oswald', sans-serif;">2016</span>
-                                <span class="black-text">
-                        is Taylor Swift's new album! Armed with new genres (EDM and Hip-hop), she's about to tell the story of her most controversial year yet! Hear it now!
-                      </span>
-                            </div>
-                            <div class="card-action">
-                                <button class="btn disabled red waves-effect waves-light black-text" type="submit" name="action"> OUT OF STOCK
-                                    <i class="material-icons right" style="font-size: 1.3em;">add_shopping_cart</i>
-                                </button>
-                            </div>
+    <div class="card grey lighten-4 title-card">
+        <div class="card-content black-text">
+            <span class="card-title" style="font-size: 3em">featured</span>
+            <div class="row">
+                <div class="col s12 m4 l4" style="padding-left: 1em; padding-right: 1em; padding-top: 0px;">
+                    <div class="card med center-align hoverable">
+                        <div class="card-image">
+                            <img src="../assets/img/item/tswift.jpg">
+                            <span class="card-content black-text" style="font-size: 2em;font-family: 'Oswald', sans-serif;">2016</span>
+                            <span class="black-text">
+                                is Taylor Swift's new album! Armed with new genres (EDM and Hip-hop), she's about to tell the story of her most controversial year yet! Hear it now!
+                            </span>
+                        </div>
+                        <div class="card-action">
+                            <button class="btn disabled red waves-effect waves-light black-text" type="submit" name="action"> OUT OF STOCK
+                                <i class="material-icons right" style="font-size: 1.3em;">add_shopping_cart</i>
+                            </button>
                         </div>
                     </div>
                 </div>
             </div>
-          </div>
         </div>
+    </div>
+</div>
 
-        <div class="col s10 m4">
-            <div class="card grey lighten-4 title-card">
-                <div class="card-content black-text">
-                    <span class="card-title" style="font-size: 3em;">all</span>
-                    <div class="row">
-                        <div class="col s12 m4 l4" ng-repeat="product in products" style="padding-left: 1em; padding-right: 1em; padding-top: 0px;">
-                            <div class="card med center-align hoverable">
-                                <div class="card-image">
-                                    <img src={{product.img_file}}>
-                                    <span class="card-content black-text" style="font-size: 2em;font-family: 'Oswald', sans-serif;">{{product.name}}</span>
-                                </div>
-                                <div class="card-action">
-                                    <form action="#">
-                                        <p class="range-field">
-                                            <input type="range" id="test5" min="0" max="{{product.quantity}}" ng-model="quantity" />
-                                            <h4>{{quantity}} piece/s of {{product.name}} costs: </h4>
-                                        </p>
-                                    </form>
-                                    <button class="btn red waves-effect waves-light" ng-click="addToCart(product.price, product.name)">php {{quantity * product.price}}
-                                        <i class="material-icons right" style="font-size: 1.3em;" >add_shopping_cart</i>
-                                    </button>
-                                </div>
-                            </div>
+<div class="col s10 m4" controller="allShopController">
+    <div class="card grey lighten-4 title-card">
+        <div class="card-content black-text">
+            <span class="card-title" style="font-size: 3em;">all</span>
+            <div class="row">
+                <div class="col s12 m4 l4" ng-repeat="product in products" style="padding-left: 1em; padding-right: 1em; padding-top: 0px;">
+                    <div class="card med center-align hoverable">
+                        <div class="card-image">
+                            <img src={{product.img_file}}>
+                            <span class="card-content black-text" style="font-size: 2em;font-family: 'Oswald', sans-serif;">{{product.name}}</span>
+                        </div>
+                        <div class="card-action">
+                            <form action="#">
+                                <p class="range-field">
+                                    <input type="range" id="test5" min="0" max="{{product.quantity}}" ng-model="quantity" />
+                                    <h4>{{quantity}} piece/s of {{product.name}} costs: </h4>
+                                </p>
+                            </form>
+                            <button class="btn red waves-effect waves-light" ng-click="addToCart(product.price, product.name, quantity)">php {{quantity * product.price}}
+                                <i class="material-icons right" style="font-size: 1.3em;" >add_shopping_cart</i>
+                            </button>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
+    </div>
+</div>

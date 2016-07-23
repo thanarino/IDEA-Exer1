@@ -24,8 +24,15 @@
 
     $scope.quantity = 0;
 
-    $scope.addToCart = function(){
-      confirm("Add to cart?");
+    $scope.addToCart = function(price, name, quantity){
+      if(confirm("Add to cart?")){
+        if(quantity === 0){
+          Materialize.toast("Zero items are not added into cart.", 2500);
+        }else{
+          Materialize.toast(quantity + " items added into cart.", 2500);
+          
+        }
+      }
     }
   }]);
 
