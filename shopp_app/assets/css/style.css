@@ -44,12 +44,12 @@ nav {
 	height: auto;
 }
 
-a:hover, a:visited, a:link, a:active {
+/*a:hover, a:visited, a:link, a:active {
 	font-family: Roboto;
 	font-size: 3vw;
 	color: white;
 	text-decoration: none;
-}
+}*/
 
  #menu-choices {
 	font-size: 1.5vw;
