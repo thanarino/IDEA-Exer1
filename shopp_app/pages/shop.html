@@ -1,4 +1,4 @@
-<div class="col s10 m4">
+<div class="col s10 m4" ng-controller="allShopController">
           <div class="card grey lighten-4 title-card">
             <div class="card-content black-text">
                 <span class="card-title" style="font-size: 3em">featured</span>
@@ -36,8 +36,14 @@
                                     <span class="card-content black-text" style="font-size: 2em;font-family: 'Oswald', sans-serif;">{{product.name}}</span>
                                 </div>
                                 <div class="card-action">
-                                    <button class="btn red waves-effect waves-light" type="submit" name="action">php {{product.price}}
-                                        <i class="material-icons right" style="font-size: 1.3em;">add_shopping_cart</i>
+                                    <form action="#">
+                                        <p class="range-field">
+                                            <input type="range" id="test5" min="0" max="{{product.quantity}}" ng-model="quantity" />
+                                            <h4>{{quantity}} piece/s of {{product.name}} costs: </h4>
+                                        </p>
+                                    </form>
+                                    <button class="btn red waves-effect waves-light" ng-click="addToCart(product.price, product.name)">php {{quantity * product.price}}
+                                        <i class="material-icons right" style="font-size: 1.3em;" >add_shopping_cart</i>
                                     </button>
                                 </div>
                             </div>

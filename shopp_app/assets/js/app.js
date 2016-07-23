@@ -21,6 +21,12 @@
          .success(function(data){
             $scope.products = data;
          });
+
+    $scope.quantity = 0;
+
+    $scope.addToCart = function(){
+      confirm("Add to cart?");
+    }
   }]);
 
   app.controller('myCartController', ['$scope', '$http', function($scope, $http){

@@ -10,7 +10,7 @@
         <link rel="stylesheet" type="text/css" href="assets/css/bootstrap.min.css"/>
         <link rel="stylesheet" type="text/css" href="assets/css/style.css"/>
     </head>
-    <body class="grey lighten-2" ng-controller="allShopController">
+    <body class="grey lighten-2">
         <nav class="grey lighten-5">
             <div class="hide-on-large-only">
                 <div class="navbar-fixed">
@@ -27,10 +27,9 @@
                         <a href="#" class="center black-text" style="font-family: 'Roboto Slab', serif;font-weight: 900;font-size: 6em;">take</a>
                     </div>
                 </li>
-                <li class="bold active" ng-class="{active:tab === 1}"><a href="#" id="menu-choices" class="black-text" ng-click="tab = 1"><i class="material-icons left">store</i>store</a></li>
-                <li class="bold" ng-class="{active:tab === 2}"><a href="#" id="menu-choices" class="black-text" ng-click="tab = 2"><i class="material-icons left large">shopping_cart</i>my cart</a></li>
+                <li class="bold active""><a href="#" id="menu-choices" class="black-text"><i class="material-icons left">store</i>store</a></li>
+                <li class="bold""><a href="#" id="menu-choices" class="black-text""><i class="material-icons left large">shopping_cart</i>my cart</a></li>
             </ul>
-            <a href="#" data-activates="slide-out" class="button-collapse black-text"><i class="mdi-navigation-menu"></i></a>
         </nav>
         <div ng-view> </div>
     </body>
